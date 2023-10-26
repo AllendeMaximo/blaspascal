@@ -10,7 +10,7 @@
     <h1>Empresas</h1>
     <div class="container">
         <% empresas.forEach(element => { %>
-            <%- if(element.Mes == 1){ %>
+            <% if(element.Mes == month) { %>
                 <div class="card">
                     <h1> <%- element.Empresa %> </h1>
                     <h2> Registro: <%- element.Registro %> Mes: <%- element.Mes %></h2>

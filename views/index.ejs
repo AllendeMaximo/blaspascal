@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Empresas</h1>
+    <nav class="navbar">
+        <div class="logo">
+        <img src="https://www.ubp.edu.ar/egt/img/logo-footer.png" alt="Icono" />
+        </div>
+        <ul class="nav-list">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
     <div class="container">
         
             <% empresas.forEach(element => { %>
@@ -21,5 +29,11 @@
             <% }) %>
         
     </div>
+    
+    <footer className="footerr">
+        <div className="footer-content">
+          <p>© Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

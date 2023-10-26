@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Empresas</h1>
+    <div class="container">
+        <% empresas.forEach(element => { %>
+            <%- if(element.Mes == 1){ %>
+                <div class="card">
+                    <h1> <%- element.Empresa %> </h1>
+                    <h2> Registro: <%- element.Registro %> Mes: <%- element.Mes %></h2>
+                    <p> Produccion Total: <%- element.ProduccionTotal %> </p>
+                    <p> Cantida Piezas Con Fallas: <%- element.CantidaPiezasConFallas %> </p>
+                </div>
+            <% } %>
+        <% }) %>    
+    </div>
+</body>
+</html>
